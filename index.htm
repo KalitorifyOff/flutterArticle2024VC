@@ -13,7 +13,7 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
             display: flex;
             flex-direction: column;
@@ -31,17 +31,44 @@
         main {
             flex: 1;
             padding: 20px;
-            text-align: center;
         }
 
-        main a {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .resource {
+            text-align: left;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .resource h2 {
             color: #6a0dad;
-            text-decoration: none;
-            font-weight: bold;
+            margin-bottom: 10px;
         }
 
-        main a:hover {
-            text-decoration: underline;
+        .resource p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .resource a.button {
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .resource a.button:hover {
+            background-color: #4b0082;
         }
 
         footer {
@@ -64,8 +91,14 @@
             header, main, footer {
                 padding: 15px;
             }
+
+            .resource {
+                padding: 15px;
+            }
         }
     </style>
+    <!-- Google Font Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -74,9 +107,38 @@
     </header>
 
     <main>
-        <p><a href="https://flutter.dev">Flutter Official Website</a></p>
-        <p><a href="https://pub.dev">Dart & Flutter Packages</a></p>
-        <p><a href="https://stackoverflow.com/questions/tagged/flutter">Flutter on StackOverflow</a></p>
+        <div class="container">
+            <div class="resource">
+                <h2>Install Flutter</h2>
+                <p>Follow the official guide to install Flutter and set up your development environment.</p>
+                <a href="https://docs.flutter.dev/get-started/install" class="button" target="_blank">Install Flutter</a>
+            </div>
+
+            <div class="resource">
+                <h2>Flutter Code Cookbook</h2>
+                <p>Explore a collection of practical Flutter code recipes and solutions for common tasks.</p>
+                <a href="https://docs.flutter.dev/cookbook" class="button" target="_blank">View Cookbook</a>
+            </div>
+
+            <div class="resource">
+                <h2>Free YouTube Videos</h2>
+                <p>Watch these free YouTube videos to learn Flutter concepts and practices.</p>
+                <a href="https://youtu.be/BiOSCpV-lts?si=_Rj6bIgh4kCkaSz_" class="button" target="_blank">Video 1</a>
+                <a href="https://youtu.be/CzRQ9mnmh44?si=Qo1m5hQSnvcr7ixa" class="button" target="_blank">Video 2</a>
+            </div>
+
+            <div class="resource">
+                <h2>Udemy Flutter Certification</h2>
+                <p>Enroll in this Udemy course to get certified in Flutter development.</p>
+                <a href="https://www.udemy.com/share/1013o4/" class="button" target="_blank">Enroll Now</a>
+            </div>
+
+            <div class="resource">
+                <h2>For More Updates Check My LinkedIn</h2>
+                <p>Connect with me on LinkedIn for more updates and professional insights.</p>
+                <a href="https://www.linkedin.com/in/rengapraveenkumar/" class="button" target="_blank">Visit LinkedIn</a>
+            </div>
+        </div>
     </main>
 
     <footer>
